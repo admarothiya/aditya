@@ -3,7 +3,7 @@ import express from "express";
 import cookieParser from "cookie-parser";
 import { fileURLToPath } from 'url';
 import path from 'path';
-import { dbconnect } from "./src/utils/db.js";
+import { dbconnect } from "./utils/db.js";
 
 // import { isLoggedInCheck } from "./middlewares/auth.js";
 

@@ -8,8 +8,8 @@ import { dbconnect } from "./utils/db.js";
 // import { isLoggedInCheck } from "./middlewares/auth.js";
 
 // Routers
-import userRouter from "./src/routes/user.js";
-import complaintRouter from "./src/routes/complaint.js";
+import userRouter from "./routes/user.js";
+import complaintRouter from "./routes/complaint.js";
 
 
 // Load environment variables

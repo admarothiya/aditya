@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+const VITE_BASE_URL=import.meta.env.VITE_BASE_URL
 
 export default function ComplaintForm() {
   const [file, setFile] = useState(null);

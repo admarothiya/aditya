@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import { Eye } from "lucide-react";
+const VITE_BASE_URL=import.meta.env.VITE_BASE_URL
 
 function Dashboard() {
   const navigate = useNavigate();

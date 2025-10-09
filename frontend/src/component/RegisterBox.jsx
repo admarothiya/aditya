@@ -1,7 +1,7 @@
 import { useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router";
-
+const VITE_BASE_URL=import.meta.env.VITE_BASE_URL
 const RegisterBox = () => {
   const [formData, setFormData] = useState({
     fullname: "",

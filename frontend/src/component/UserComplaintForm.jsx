@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-
+const VITE_BASE_URL=import.meta.env.VITE_BASE_URL
 function UserComplaintForm() {
   const navigate = useNavigate();
   const [file, setFile] = useState(null);
@@ -50,7 +50,7 @@ function UserComplaintForm() {
       formData.append("reason", e.target.reason.value);
       formData.append("agree", e.target.agree.checked);
 
-      const res = await fetch(`/api/complaint/create/${userid}`, {
+      const res = await fetch(`${VITE_BASE_URL}/api/complaint/create/${userid}`, {
         method: "POST",
         body: formData,
       });

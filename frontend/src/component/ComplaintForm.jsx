@@ -72,7 +72,7 @@ export default function ComplaintForm() {
       formData.append("agree", form.agree.checked);
 
       
-      const res = await fetch(`/api/complaint/create/${userid}`, {
+      const res = await fetch(`${VITE_BASE_URL}/api/complaint/create/${userid}`, {
         method: "POST",
         body: formData,
       });

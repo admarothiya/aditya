@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
+const VITE_BASE_URL=import.meta.env.VITE_BASE_URL
 
 function UserLogin() {
   const navigate = useNavigate();
@@ -15,7 +16,7 @@ function UserLogin() {
     setError("");
 
     try {
-      const res = await axios.post("/api/user/login", { email, password });
+      const res = await axios.post(`${VITE_BASE_URL}/api/user/login`, { email, password });
 
       console.log("Login Response:", res);  // ✅ Debugging: Check API response
 

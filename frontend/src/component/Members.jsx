@@ -7,7 +7,7 @@ function Members() {
   useEffect(() => {
     const fetchUsers = async () => {
       try {
-        const res = await axios.get("/api/user/get-all");
+        const res = await axios.get(`${VITE_BASE_URL}/api/user/get-all`);
         setUsers(res.data);
         console.log("Fetched Users:", res.data);
       } catch (err) {

@@ -11,7 +11,7 @@ function Dashboard() {
 
   const fetchComplaints = async () => {
     try {
-      const res = await axios.get(`/api/complaint/get-all`);
+      const res = await axios.get(`${VITE_BASE_URL}/api/complaint/get-all`);
       const formattedComplaints = res.data.map(c => ({
         _id: c._id,
         reason: c.reason,

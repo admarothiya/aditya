@@ -18,7 +18,7 @@ const RegisterBox = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post(`/api/user/register`, formData);
+      await axios.post(`${VITE_BASE_URL}/api/user/register`, formData);
       alert("🎉 Registration successful!");  
       navigate("/userlogin");  // ✅ Redirect to User Login
     } catch (err) {

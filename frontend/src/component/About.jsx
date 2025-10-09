@@ -2,22 +2,22 @@ function About() {
   const features = [
     {
       title: "Transparency",
-      img: "/src/assets/lll.jpg",
+      img: "/lll.jpg",
       desc: "Our website will provide transparency to the citizens in the working of the government. All the data and updates will be available in one place..",
     },
     {
       title: "Easy Access",
-      img: "/src/assets/mmm.png",
+      img: "/mmm.png",
       desc: "All services and information can be accessed anytime on mobile or desktop. No need to stand in queue.",
     },
     {
       title: "Citizen Empowerment",
-      img: "/src/assets/vvv.jpg",
+      img: "/vvv.jpg",
       desc: "People can directly contribute towards improving the society by giving their suggestions and feedback.",
     },
     {
       title: "Time Saving",
-      img: "/src/assets/iii.webp",
+      img: "/iii.webp",
       desc: "By making all important facilities available online, citizens will save time and get their work done faster.",
     },
   ];

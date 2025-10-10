@@ -7,27 +7,6 @@ function UserDashboard() {
   const [stats, setStats] = useState({ total: 0, pending: 0, solved: 0, rejected: 0 });
 
   
-  const fetchComplaints = async () => {
-    try {
-      const res = await axios.get(`${VITE_BASE_URL}/api/complaint/get-all`);
-      const formattedComplaints = res.data.map(c => ({
-        _id: c._id,
-        reason: c.reason,
-        status: c.status,
-        file: c.filePath,  // Make sure you're using filePath from backend
-        name: c.userid?.fullname || "Unknown User",
-        email: c.userid?.email || "unknown@example.com",
-        mobile: c.userid?.mobile || "N/A"
-      }));
-      setComplaints(formattedComplaints);
-    } catch (err) {
-      console.error("Error fetching complaints:", err);
-    }
-  };
-
-  useEffect(() => {
-    fetchComplaints();
-  }, []);
 
   const userid = JSON.parse(localStorage.getItem("user")).id;
 
